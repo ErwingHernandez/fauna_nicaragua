@@ -1,13 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Fauna = require('./models/Fauna');
+const cors = require('cors');
 const faunaRoutes = require('./routes/FaunaRoutes');
 const PORT = 3000 || 4000;
 
 
 const app = express();
 
-app.use(express.json()); 3
+app.use(cors());
+app.use(express.json()); 
 app.use(express.urlencoded({ extended: false }))
 
 // Rutas
