@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Fauna = require('./models/Fauna');
 const cors = require('cors');
 const faunaRoutes = require('./routes/FaunaRoutes');
 const PORT = 3000 || 4000;

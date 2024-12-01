@@ -1,5 +1,7 @@
 const Fauna = require('../models/Fauna')
 
+
+
 const getFaunas = async (req, res) => {
   try {
     const fauna = await Fauna.find({});
@@ -69,10 +71,12 @@ const deleteFauna = async (req, res) => {
   }
 };
 
+
+
 module.exports = {
   getFaunas,
   getFauna,
   createFauna,
-  updateFauna,
-  deleteFauna
+  updateFauna,  
+  deleteFauna,
 }
